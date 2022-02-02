@@ -14,12 +14,21 @@ defmodule Rules do
   def lose?(power_pellet_active, touching_ghost) do
     # Please implement the lose?/2 function
     not power_pellet_active
+
+    #IO.inspect(power_pellet_active)
+    #IO.inspect(touching_ghost)
   end
 
   def win?(has_eaten_all_dots, power_pellet_active, touching_ghost) do
     # Please implement the win?/3 function
+
     IO.inspect(has_eaten_all_dots)
-    #IO.inspect(power_pellet_active)
-    #IO.inspect(touching_ghost)
+    IO.inspect(power_pellet_active)
+    IO.inspect(touching_ghost)
+
+    has_eaten_all_dots or power_pellet_active
+    (not (power_pellet_active or touching_ghost))
+
+
   end
 end
