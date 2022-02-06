@@ -7,4 +7,4 @@
 - [ ] 01. Basics
   - [x] Lasagna
 - [ ] 04 Booleans `[Bo]`
-  - [ ] Pacman Rules
+  - [ ] Pacman Rules `[11/12 Tests passed]`
