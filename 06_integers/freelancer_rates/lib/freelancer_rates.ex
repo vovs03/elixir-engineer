@@ -17,19 +17,25 @@ defmodule FreelancerRates do
   end
 
   def daily_rate(hourly_rate) do
-    hourly_rate * 8.0 |> IO.inspect(label: "Test 1,2,3 - hourly_rate")
+    hourly_rate * 8.0
+    |> IO.inspect(label: "Test 1,2,3 - daily_rate")
   end
 
   def apply_discount(before_discount, discount) do
-    (before_discount - (before_discount / discount * 1.0)) |> IO.inspect(label: "Test 4,5,6 - apply_discount")
+    (100 - discount) / 100 * before_discount
+    |> IO.inspect(label: "Test 4,5,6 - apply_discount")
   end
 
   def monthly_rate(hourly_rate, discount) do
-   trunc(hourly_rate * 8 * 22) - ceil(discount, 1) |> IO.inspect(label: "Test 7,8 - monthly_rate | hourly_rate")
-    #Float.ceil(discount) |> IO.inspect(label: "Test 9,10 - monthly_rate | discount")
+    before_discount = 22 * daily_rate(hourly_rate)
+    apply_discount(before_discount, discount)
+    |> ceil() |> IO.inspect(label: "Test 7,8,9,10 - monthly_rate")
   end
 
   def days_in_budget(budget, hourly_rate, discount) do
-    # Please implement the days_in_budget/3 function
+    days_amount = (budget / daily_rate(hourly_rate))
+    |> Float.floor(1)
+    ((100 + discount) / 100) * days_amount
+    |> IO.inspect(label: "Test 11,12,13,14 - days_in_budget")
   end
 end
