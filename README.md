@@ -10,3 +10,5 @@
   - [x] Pacman Rules `[12/12 Tests passed]`
 - [ ] 06 Integers `[In]`
   - [x] Freelancer Rates `[14/14 Tests passed]` | `[Part of so;ution saw]` [here](https://github.com/gerald-annan/freelancer-rates/blob/main/lib/freelancer_rates.ex)
+- [ ] 09 Cond
+  - [ ] LogLevel
