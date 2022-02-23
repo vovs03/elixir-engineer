@@ -2,11 +2,13 @@
 
 ## List of concepts
 
-> 
+> Integers, Float, Booleans
 
 - [ ] 01. Basics
   - [x] Lasagna
 - [ ] 04 Booleans `[Bo]`
-  - [ ] Pacman Rules `[11/12 Tests passed]`
+  - [x] Pacman Rules `[12/12 Tests passed]`
 - [ ] 06 Integers `[In]`
-  - [ ] Freelancer Rates `[7/14 Tests passed]`
+  - [x] Freelancer Rates `[14/14 Tests passed]` | `[Part of so;ution saw]` [here](https://github.com/gerald-annan/freelancer-rates/blob/main/lib/freelancer_rates.ex)
+- [ ] 09 Cond
+  - [ ] LogLevel
