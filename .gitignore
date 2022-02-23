@@ -1,3 +1,6 @@
-.ex.swp
-.beam
+*.ex.swp
+*.beam
+*.ez
+*.swp
 
+### see more https://github.com/github/gitignore
